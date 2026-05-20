@@ -1,4 +1,4 @@
-name: Tourist Package prediction
+name: Predictive Mainteance
 
 on:
   workflow_dispatch:
