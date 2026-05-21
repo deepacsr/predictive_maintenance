@@ -19,7 +19,7 @@ from huggingface_hub import login, HfApi
 
 # LOAD DATASET FROM HUGGING FACE
 api = HfApi(token=os.getenv("HF_TOKEN_PREDMAINT"))
-DATASET_PATH = "hf://datasets/deepacsr/predictive-maintenance/engine_data"
+DATASET_PATH = "hf://datasets/deepacsr/predictive-maintenance/engine_data.csv"
 
 # Read the data in to panda frame
 df = pd.read_csv(DATASET_PATH)
