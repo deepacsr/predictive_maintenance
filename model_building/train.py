@@ -26,10 +26,10 @@ mlflow.set_experiment("MLops-Training-Experiment")
 api = HfApi()
 
 #Reading the train and test data from hugging face repo
-Xtrain_path = "hf://datasets/deepacsr/tourism-package-prediction/Xtrain.csv"
-Xtest_path = "hf://datasets/deepacsr/tourism-package-prediction/Xtest.csv"
-ytrain_path = "hf://datasets/deepacsr/tourism-package-prediction/ytrain.csv"
-ytest_path = "hf://datasets/deepacsr/tourism-package-prediction/ytest.csv"
+Xtrain_path = "hf://datasets/deepacsr/predictive-maintenance/Xtrain.csv"
+Xtest_path = "hf://datasets/deepacsr/predictive-maintenance/Xtest.csv"
+ytrain_path = "hf://datasets/deepacsr/predictive-maintenance/ytrain.csv"
+ytest_path = "hf://datasets/deepacsr/predictive-maintenance/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
