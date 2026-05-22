@@ -2,6 +2,9 @@
 from huggingface_hub import HfApi
 import os
 
+#Added for force build deployment after the build 
+with open("./deployment/version.txt", "w") as f:
+    f.write(str(datetime.now()))
 
 api = HfApi(token=os.getenv("HF_TOKEN_PREDMAINT"))
 api.upload_folder(
