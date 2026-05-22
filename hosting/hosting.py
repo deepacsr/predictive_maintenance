@@ -2,6 +2,7 @@
 from huggingface_hub import HfApi
 import os
 
+
 api = HfApi(token=os.getenv("HF_TOKEN_PREDMAINT"))
 api.upload_folder(
     folder_path="./deployment",     # the local folder containing your files
