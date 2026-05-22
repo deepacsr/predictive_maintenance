@@ -1,6 +1,7 @@
 
 from huggingface_hub import HfApi
 import os
+from datetime import datetime
 
 #Added for force build deployment after the build 
 with open("./deployment/version.txt", "w") as f:
