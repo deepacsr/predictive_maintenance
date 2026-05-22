@@ -6,8 +6,8 @@ import joblib
 import streamlit as st
 
 # Below commented code created for debugging
-#st.title("Test App Running")
-#st.write("If you see this, Docker is fine.")
+st.title("Test App Running")
+st.write("If you see this, Docker is fine.")
 
 # Download and load the trained model that was aved
 model_path = hf_hub_download(repo_id="deepacsr/predictive-maintenance", filename="best_package_prediction_model_v1.joblib")
