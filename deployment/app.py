@@ -16,7 +16,7 @@ model = joblib.load(model_path)
 # Streamlit UI
 st.title("Predictive Maintenance")
 st.write("""
-This application predicts if Engine is likely to go Faulty or working in Nornaml condition.
+This application predicts if Engine is likely to go Faulty or is in Normal Working condition based on Sensor data.
 """)
 
 # For numerical variables, Min and Max value taken based on the current data available.
